@@ -7,7 +7,7 @@ exec --no-startup-id "xcompmgr -c"
 # exec --no-startup-id "amixer -D pulse sset Master 0%; amixer set Master mute"
 
 # Setting wallpaper
-exec_always --no-startup-id "feh --bg-fill /home/dominic/Pictures/wallpapers/spaceman.jpg"
+exec_always --no-startup-id "feh --bg-fill /home/celle/Pictures/wallpapers/spaceman.jpg"
 
 # Setting keyboard layout
 bindsym $mod+Ctrl+1 exec --no-startup-id "setxkbmap us"
@@ -62,7 +62,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%

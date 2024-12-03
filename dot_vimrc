@@ -8,6 +8,7 @@ set nowrap
 set number
 hi Normal ctermbg=BLACK
 au BufEnter * hi Normal ctermbg=BLACK
+autocmd BufWinEnter * if getfsize(expand("%")) > 1000000 | syntax clear | endif
 
 set cursorline
 

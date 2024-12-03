@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/dominic/.zshrc'
+zstyle :compinstall filename '/home/celle/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -131,9 +131,9 @@ alias clip='xclip -sel c'
 alias goch='go mod tidy && go vet ./... && staticcheck ./...'
 
 # ENV vars
-export GOBIN=/home/dominic/go/bin
-export KREWPATH=/home/dominic/.krew/bin
-export PATH=/home/dominic/Scripts:/home/dominic/.local/bin:$GOBIN:$KREWPATH:$PATH
+export GOBIN=/home/celle/go/bin
+export KREWPATH=/home/celle/.krew/bin
+export PATH=/home/celle/Scripts:/home/celle/.local/bin:$GOBIN:$KREWPATH:$PATH
 
 export EDITOR="vim"
 export VISUAL="vim"
